@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abernita <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/31 10:08:53 by abernita          #+#    #+#             */
+/*   Updated: 2022/03/31 10:08:57 by abernita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 int	which_way_faster(t_all *all)
 {
-	int 	i;
-	int 	j;
+	int		i;
+	int		j;
 	t_node	*tmp;
 
 	tmp = all->stack_a;
@@ -11,7 +23,7 @@ int	which_way_faster(t_all *all)
 	while (++i)
 	{
 		if (tmp->index == all->min)
-			break;
+			break ;
 		tmp = tmp->next;
 	}
 	tmp = all->stack_a;
@@ -19,7 +31,7 @@ int	which_way_faster(t_all *all)
 	while (++j)
 	{
 		if (tmp->index == tmp->min)
-			break;
+			break ;
 		tmp = tmp->next;
 	}
 	if (j >= i)
@@ -27,7 +39,7 @@ int	which_way_faster(t_all *all)
 	return (0);
 }
 
-int ft_is_sort_true(t_all *all)
+int	ft_is_sort_true(t_all *all)
 {
 	int		i;
 	t_node	*head;
@@ -55,7 +67,7 @@ void	ft_sorting(t_all *all)
 	ft_send_first_group_to_b(all);
 	while (!ft_is_sort_true(all) && all->size_b == 0)
 	{
-		if	(all->size_b > 0 && all->size_b < 6)
+		if (all->size_b > 0 && all->size_b < 6)
 			ft_stack_b_sorting_five(all);
 		else if (all->size_b >= 6)
 			ft_send_from_b_to_a(all);
@@ -67,7 +79,7 @@ void	ft_sorting(t_all *all)
 	}
 }
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	t_all	*all;
 
