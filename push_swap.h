@@ -58,3 +58,6 @@ void	ft_build_stack(t_all *all, int *sort, int *not_sort, int len);
 void	ft_free_stack(t_all *all);
 void	ft_buble_sort(t_all *all, int *sort, int *not_sort, int len);
 void	ft_prepare_for_stack(t_all *all, char **arr);
+
+void	ft_sorting_three_a(t_all *all);
+void	ft_sorting_five(t_all *all);
