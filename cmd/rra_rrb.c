@@ -32,8 +32,8 @@ void	rrr(t_all *all, int flag)
 {
 	if (all->size_a > 1 && all->size_b > 1)
 	{
-		rra(all, 1);
-		rrb(all, 1);
+		rra(all, 0);
+		rrb(all, 0);
 		if (flag)
 			write(1, "rrr\n", 4);
 	}

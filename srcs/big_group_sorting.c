@@ -68,7 +68,7 @@ void	stack_b_sorting_five(t_all *all)
 	int	flag;
 
 	i = all->size_b;
-	min = all->stack_b->prev->index + 1;
+	min = all->stack_a->prev->index + 1;
 	flag = all->stack_a->flag;
 	while (i > 3)
 	{

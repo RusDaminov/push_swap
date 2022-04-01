@@ -32,7 +32,7 @@ int	which_way_faster(t_all *all)
 	{
 		if (tmp->index == all->min)
 			break ;
-		tmp = tmp->next;
+		tmp = tmp->prev;
 	}
 	if (j >= i)
 		return (1);
@@ -52,6 +52,7 @@ int	ft_is_sort_true(t_all *all)
 			return (0);
 		head = head->next;
 	}
+//	write (1, "sorted", 6);
 	return (1);
 }
 
@@ -79,7 +80,7 @@ void	ft_sorting(t_all *all)
 		ft_free_stack(all);
 	}
 	send_first_group_to_b(all);
-	while (!ft_is_sort_true(all) && all->size_b == 0)
+	while (!(ft_is_sort_true(all) && all->size_b == 0))
 	{
 		if (all->size_b > 0 && all->size_b < 6)
 			stack_b_sorting_five(all);

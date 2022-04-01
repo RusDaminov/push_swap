@@ -54,8 +54,8 @@ void	ss(t_all *all, int flag)
 {
 	if (all->size_a > 1 && all->size_b > 1)
 	{
-		sa(all, 1);
-		sb(all, 1);
+		sa(all, 0);
+		sb(all, 0);
 		if (flag)
 			write(1, "ss\n", 3);
 	}

@@ -1,0 +1,13 @@
+a.out
+.DS_Store
+*.o
+*.swp
+*.swo
+lst/
+.idea/
+test/
+*test*
+CMakeLists.txt
+*.txt
+cmake*/
+main.c

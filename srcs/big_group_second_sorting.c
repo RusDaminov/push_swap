@@ -16,7 +16,7 @@ void	search_min_a_to_b(t_all *all)
 {
 	int	min;
 
-	min = all->stack_a->prev->index +1;
+	min = all->stack_a->prev->index + 1;
 	if (all->stack_b->index == min)
 	{
 		pa(all, 1);
@@ -45,7 +45,7 @@ int	search_min_b_to_a(t_all *all)
 {
 	int	min;
 
-	min = all->stack_a->prev->index +1;
+	min = all->stack_a->prev->index + 1;
 	if (all->stack_b->index == min)
 	{
 		pa(all, 1);

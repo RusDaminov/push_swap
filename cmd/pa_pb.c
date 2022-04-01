@@ -62,6 +62,19 @@ void	push_top_b_to_a(t_all *all)
 
 void	pa(t_all *all, int flag)
 {
+	if (all->size_b == 0)
+		return ;
+	push_top_b_to_a(all);
+	if (all->size_b == 1)
+		all->stack_b = NULL;
+	all->size_b--;
+	all->size_a++;
+	if (flag)
+		write(1, "pa\n", 3);
+}
+
+void	pb(t_all *all, int flag)
+{
 	if (all->size_a == 0)
 		return ;
 	push_top_a_to_b(all);
@@ -73,15 +86,4 @@ void	pa(t_all *all, int flag)
 		write(1, "pb\n", 3);
 }
 
-void	pb(t_all *all, int flag)
-{
-	if (all->size_b == 0)
-		return ;
-	push_top_b_to_a(all);
-	if (all->size_b == 1)
-		all->stack_b = NULL;
-	all->size_b--;
-	all->size_a++;
-	if (flag)
-		write(1, "pa\n", 3);
-}
+

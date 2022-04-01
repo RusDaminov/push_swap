@@ -14,7 +14,7 @@
 
 void	ft_display_error(void)
 {
-	ft_putstr_fd("Error\n", 2);
+	ft_putstr_fd("Error!!\n", 2);
 	exit(EXIT_SUCCESS);
 }
 
@@ -62,7 +62,7 @@ void	ft_check_input_numbers(char **arr)
 		{
 			if (arr[i][j] == '-')
 				j++;
-			if (!ft_isdigit(arr[i][j]))
+			if (!(ft_isdigit(arr[i][j])))
 				ft_free_arr(arr, 1);
 			j++;
 		}

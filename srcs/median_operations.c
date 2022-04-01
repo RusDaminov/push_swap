@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   median_operations.c                                 :+:      :+:    :+:   */
+/*   median_operations.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abernita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -27,7 +27,7 @@ void	stack_a_find_minmax_med(t_all *all)
 	{
 		if (min > all->stack_a->index)
 			min = all->stack_a->index;
-		if (max > all->stack_a->index)
+		if (max < all->stack_a->index)
 			max = all->stack_a->index;
 		all->stack_a = all->stack_a->next;
 	}
@@ -51,7 +51,7 @@ void	stack_b_find_minmax_med(t_all *all)
 	{
 		if (min > all->stack_b->index)
 			min = all->stack_b->index;
-		if (max > all->stack_b->index)
+		if (max < all->stack_b->index)
 			max = all->stack_b->index;
 		all->stack_b = all->stack_b->next;
 	}
