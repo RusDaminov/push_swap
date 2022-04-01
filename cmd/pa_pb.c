@@ -85,5 +85,3 @@ void	pb(t_all *all, int flag)
 	if (flag)
 		write(1, "pb\n", 3);
 }
-
-

@@ -96,4 +96,6 @@ void	ft_send_back(t_all *all);
 void	sorting_five_from_a_to_b(t_all *all, int flag, int min, int i);
 void	sorting_five_from_a_to_b_sec(t_all *all, int flag);
 
+void	check_trap(int ac, char **av);
+
 #endif
