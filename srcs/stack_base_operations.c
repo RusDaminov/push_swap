@@ -29,13 +29,13 @@ void	ft_build_stack(t_all *all, int *sort, int *not_sort, int len)
 				j++;
 				break ;
 			}
-			j++
-			}
-		i++;
+			j++;
 		}
-		free(not_sort);
-		free(sort);
+		i++;
 	}
+	free(not_sort);
+	free(sort);
+}
 
 void	ft_free_stack(t_all *all)
 {

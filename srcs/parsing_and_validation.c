@@ -87,6 +87,6 @@ void	ft_check_for_doubles(char **arr)
 				ft_free_arr(arr, 1);
 			j++;
 		}
-		i++
-		}
-		}
+		i++;
+	}
+}

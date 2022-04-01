@@ -61,3 +61,39 @@ void	ft_prepare_for_stack(t_all *all, char **arr);
 
 void	ft_sorting_three_a(t_all *all);
 void	ft_sorting_five(t_all *all);
+
+void	stack_a_find_minmax_med(t_all *all);
+void	stack_b_find_minmax_med(t_all *all);
+void	final_rotate_send_to_a(t_all *all);
+void	send_first_group_to_b(t_all *all);
+
+void	push_top_a_to_b(t_all *all);
+void	push_top_b_to_a(t_all *all);
+void	pa(t_all *all, int flag);
+void	pb(t_all *all, int flag);
+
+void	ra(t_all *all, int flag);
+void	rb(t_all *all, int flag);
+void	rr(t_all *all, int flag);
+
+void	rra(t_all *all, int flag);
+void	rrb(t_all *all, int flag);
+void	rrr(t_all *all, int flag);
+
+void	sa(t_all *all, int flag);
+void	sb(t_all *all, int flag);
+void	ss(t_all *all, int flag);
+
+void	inverse_stack(t_all *all);
+void	stack_b_sorting_three(t_all *all);
+void	aftermath_sorting_three(t_all *all, int flag);
+void	stack_b_sorting_five(t_all *all);
+void	send_from_b_to_a(t_all *all);
+
+void 	search_min_a_to_b(t_all *all);
+int 	search_min_b_to_a(t_all *all);
+void	ft_send_back(t_all *all);
+void	sorting_five_from_a_to_b(t_all *all, int flag, int min, int i);
+void	sorting_five_from_a_to_b_sec(t_all *all, int flag);
+
+#endif
