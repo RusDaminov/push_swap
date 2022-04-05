@@ -53,6 +53,7 @@ t_node	*ft_new_list(int num, int index);
 void	listadd_back(t_node **stack_a, t_node *new);
 int		ft_arr_len(char **arr);
 t_all	*ft_init_struct(char **arr);
+void	ft_error_free(char *line);
 
 void	ft_build_stack(t_all *all, int *sort, int *not_sort, int len);
 void	ft_free_stack(t_all *all);
@@ -90,8 +91,8 @@ void	aftermath_sorting_three(t_all *all, int flag);
 void	stack_b_sorting_five(t_all *all);
 void	send_from_b_to_a(t_all *all);
 
-void 	search_min_a_to_b(t_all *all);
-int 	search_min_b_to_a(t_all *all);
+void	search_min_a_to_b(t_all *all);
+int		search_min_b_to_a(t_all *all);
 void	ft_send_back(t_all *all);
 void	sorting_five_from_a_to_b(t_all *all, int flag, int min, int i);
 void	sorting_five_from_a_to_b_sec(t_all *all, int flag);

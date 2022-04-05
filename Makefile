@@ -24,7 +24,7 @@ CC		=	gcc
 
 FLAGS	=	-Wall -Wextra -Werror
 
-RM		= rm -rf
+RM		= 	rm -rf
 
 .PHONY:		all	clean	fclean	re	bonus
 

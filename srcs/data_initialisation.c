@@ -82,3 +82,10 @@ t_all	*ft_init_struct(char **arr)
 	all->min_a = 1;
 	return (all);
 }
+
+void	ft_error_free(char *line)
+{
+	free(line);
+	ft_putstr_fd("Error\n", 2);
+	exit(EXIT_SUCCESS);
+}

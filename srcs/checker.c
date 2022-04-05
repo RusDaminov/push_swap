@@ -37,7 +37,7 @@ static void	get_cmd(t_all *all, char *line)
 	else if (!ft_strncmp(line, "rrr\n", 3))
 		rrr(all, 0);
 	else
-		ft_display_error();
+		ft_error_free(line);
 }
 
 static void	checker(t_all *all)
@@ -50,6 +50,7 @@ static void	checker(t_all *all)
 		if (!line)
 			break ;
 		get_cmd(all, line);
+		free(line);
 	}
 	if (ft_is_sort_true(all))
 		write(1, "OK\n", 3);

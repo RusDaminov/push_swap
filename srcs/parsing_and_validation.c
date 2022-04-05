@@ -15,7 +15,8 @@
 void	ft_display_error(void)
 {
 	ft_putstr_fd("Error\n", 2);
-	exit(EXIT_SUCCESS);
+	while (1)
+		exit(EXIT_SUCCESS);
 }
 
 char	**ft_readline(char **av)
@@ -60,7 +61,7 @@ void	ft_check_input_numbers(char **arr)
 		j = 0;
 		while (arr[i][j])
 		{
-			if (arr[i][j] == '-')
+			if (arr[i][j] == '-' || arr[i][j] == '+')
 				j++;
 			if (!(ft_isdigit(arr[i][j])))
 				ft_free_arr(arr, 1);
