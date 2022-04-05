@@ -14,7 +14,7 @@
 
 void	ft_display_error(void)
 {
-	ft_putstr_fd("Error!!\n", 2);
+	ft_putstr_fd("Error\n", 2);
 	exit(EXIT_SUCCESS);
 }
 
@@ -68,7 +68,9 @@ void	ft_check_input_numbers(char **arr)
 		}
 		num = ft_atoi(arr[i]);
 		if (num > MAX_INT || num < MIN_INT)
+		{
 			ft_free_arr(arr, 1);
+		}
 	}
 }
 
