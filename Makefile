@@ -18,7 +18,7 @@ OBJ		=	$(SRCS:%.c=%.o)
 
 OBJ_B	=	$(SRCS_B:%.c=%.o)
 
-LIB		=	libft/libft.a
+LIB		=	lib/libft.a
 
 CC		=	gcc
 
@@ -28,7 +28,7 @@ RM		= rm -rf
 
 .PHONY:		all	clean	fclean	re	bonus
 
-all:		libft $(NAME)
+all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			@echo "[ $(NAME) compilation ]"
@@ -39,7 +39,7 @@ $(NAME):	$(OBJ)
 			@$(CC) $(FLAGS)  -c $< -o $@
 
 bonus:		$(OBJ_B)
-			$(CC) $(FLAGS) $(OBJ_B) $(LIB) -o $(NAME_B)
+			@$(CC) $(FLAGS) $(OBJ_B) $(LIB) -o $(NAME_B)
 			@echo "\n[ Bonus part compiled! ]\n"
 
 clean:
